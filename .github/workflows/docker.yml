@@ -13,3 +13,7 @@ jobs:
       - run: sleep 2
       - run: curl -f localhost:8080
       - run: docker rm -f minside
+      - run: docker run -d --name minside -p 9090:8000 minside
+      - run: sleep 2
+      - curl: -f localhost:9090
+      - run: docker rm -f minside
