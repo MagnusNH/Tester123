@@ -4,7 +4,7 @@ services:
     ports:
       - "8080:8000"
     volumes:
-      -data:/app/data
+      - data:/app/data
 
   check:
     image: curlimages/curl
