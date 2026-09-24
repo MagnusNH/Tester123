@@ -20,3 +20,7 @@ jobs:
       - run: bash image.sh
       - run: bash image.sh
       - run: bash volume.sh
+      - run: docker compose up -d --build
+      - run: sleep 2
+      - run: curl -f localhost:8080
+      - run: docker dompose down
