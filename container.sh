@@ -3,4 +3,7 @@ docker run -d --name Tester nginx
 docker exec Tester ls /usr/share/nginx/html
 docker logs Tester
 docker run -d --name Tester2 nginx
-
+docker stop Tester
+docker Stop Tester2
+docker rm Tester
+docker rm Tester2
