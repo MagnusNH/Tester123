@@ -19,3 +19,4 @@ jobs:
       - run: docker rm -f minside
       - run: bash image.sh
       - run: bash image.sh
+      - run: bash volume.sh
