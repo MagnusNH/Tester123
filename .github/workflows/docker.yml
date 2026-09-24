@@ -9,3 +9,6 @@ jobs:
       - run: bash container.sh
       - run: bash container.sh
       - run: docker build -t minside .
+      - run: docker run -d --name minside -p 8080:8000 minside
+      - run: curl -f localhost:8080
+      - run: docker rm -f minside
